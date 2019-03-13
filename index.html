@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Invie</title>	
 	<style media="screen">
@@ -13,11 +12,19 @@
 			max-width: 100%;
 			vertical-align: top;
 		}
+		img#responsive {
+			display: none;
+		}
+		@media screen and (max-width: 768px) {
+			img#responsive {
+				display: block;
+			}
+		}
 		</style>
 </head>
 <body>
-	<img src="header.jpg" alt="">
-	<img src="hero.jpg" alt="">
-	<img src="acustica.jpg" alt="">
+	<hi>Este es invie donde hacemos guitarras cool</hi>
+	<img id="responsive" src="invie-responsive.png" alt="">
+	<img src="nueva-version.jpg" alt="">
 </body>
 </html>
